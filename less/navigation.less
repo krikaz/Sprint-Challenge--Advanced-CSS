@@ -1,1 +1,22 @@
-// Navigation code here
+.navigation {
+  .flexbox(column, normal, center);
+  background-color: @sea-shell;
+
+  h1 {
+    padding: 2%;
+  }
+
+  ul {
+    .flexbox(row, space-around, normal);
+    width: 60%;
+    padding: 2%;
+
+    @media @phone {
+      width: 80%;
+    }
+
+    li {
+      font-size: @medium;
+    }
+  }
+}
