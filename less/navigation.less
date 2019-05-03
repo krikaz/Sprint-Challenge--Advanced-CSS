@@ -1,1 +1,17 @@
-// Navigation code here
+.navigation {
+  .flexbox(column, normal, center);
+
+  h2 {
+    padding: 2%;
+  }
+
+  ul {
+    .flexbox(row, space-around, normal);
+    width: 50%;
+
+    li {
+      font-size: @large;
+      padding: 2%;
+    }
+  }
+}
