@@ -55,8 +55,18 @@
     padding: 50px 60px;
     .flexbox(row, center, normal);
 
+    @media @phone {
+      margin-top: 25px;
+      padding: 4%;
+      .flexbox(column-reverse, normal, normal);
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -73,19 +83,17 @@
       .btn {
         .change-button(@porcelain, @btn-bg-color);
 
+        @media @phone {
+          .button-mobile()
+        }
+
         &:hover {
           .change-button(@river-bend, @sea-shell);
-        }
 
-        @media @phone {
-          width: 100%;
-          text-align: center;
-          padding: 6% 5%;
+          @media @phone {
+            .button-mobile()
+          }
         }
-      }
-
-      @media @phone {
-        width: 100%;
       }
     }
 
@@ -93,22 +101,16 @@
       width: 46%;
       margin-left: 4%;
 
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
-
-      @media @phone {
-        width: 100%;
-        margin-left: 0;
-      }
-    }
-
-    @media @phone {
-      margin-top: 25px;
-      padding: 4%;
-      .flexbox(column-reverse, normal, normal);
     }
   }
 } // home
