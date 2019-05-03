@@ -190,6 +190,7 @@ footer {
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -201,6 +202,9 @@ footer {
 }
 .home .space-images {
   display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -224,7 +228,9 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: normal;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -238,6 +244,14 @@ footer {
 .home .walk .walk-text .btn {
   color: #F6F7F8;
   background-color: #22283A;
+  font-size: 2rem;
+  width: fit-content;
+  padding: 2% 5%;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  color: #454A59;
+  background-color: #F1F1F1;
   font-size: 2rem;
   width: fit-content;
   padding: 2% 5%;
