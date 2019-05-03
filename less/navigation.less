@@ -1,5 +1,6 @@
 .navigation {
   .flexbox(column, normal, center);
+  background-color: @sea-shell;
 
   h1 {
     padding: 2%;
@@ -8,10 +9,14 @@
   ul {
     .flexbox(row, space-around, normal);
     width: 50%;
+    padding: 2%;
 
     li {
-      font-size: @large;
-      padding: 2%;
+      font-size: @medium;
+    }
+
+    @media @phone {
+      width: 80%;
     }
   }
 }

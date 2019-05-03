@@ -168,6 +168,7 @@ p {
   flex-direction: column;
   justify-content: normal;
   align-items: center;
+  background-color: #F1F1F1;
 }
 .navigation h1 {
   padding: 2%;
@@ -178,10 +179,15 @@ p {
   justify-content: space-around;
   align-items: normal;
   width: 50%;
+  padding: 2%;
 }
 .navigation ul li {
-  font-size: 2rem;
-  padding: 2%;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navigation ul {
+    width: 80%;
+  }
 }
 footer {
   color: #22283B;
@@ -193,6 +199,9 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
